@@ -12,15 +12,42 @@ document.getElementById("second").innerHTML = "Loops";
  var y = Math.floor(Math.random() * 15 + 1); 
  var guess = 1; 
       
-    document.getElementById("submitguess").onclick = function(){ 
+    document.getElementById("submitguess").onclick = function() {
       
    // number guessed by user      
    var x = document.getElementById("guessField").value; 
   
    if(x == y) 
+
    {     
        document.getElementById("type").innerHTML = "That is Correct! "
                + guess + " GUESSES WERE USED "; 
+
+
+
+switch(guess) {
+case 1:
+case 2:
+case 3:
+ pathToImage = "images/blueribbon2.png";
+break;
+case 4:
+case 5:
+case 6:
+ pathToImage = "images/redribbon2.png";
+break;
+default:
+ pathToImage = "images/yellowribbon2.png";
+}//end switch
+
+
+var pathToImage;
+var awardImage = document.createElement("IMG");
+awardImage.setAttribute('src', pathToImage);
+
+document.getElementById('face').appendChild(awardImage);
+
+
    } 
    else if(x > y)
    {     
@@ -37,38 +64,5 @@ document.getElementById("second").innerHTML = "Loops";
    	    guess++;
    		document.getElementById("type").innerHTML = "Number is out of range"; 
    }
-
-
-
-
-
-
-switch (face) {
-	case 1:
-	guess < 4;
-	pathToImage = "images/firstplaceimage.jpg";
-	break;
-	case 2:
-	10 > guess > 5;
-	pathToImage = "images/secondplaceimage.jpg";
-	break;
-
-
-
-
-var pathToImage = "images/firstplaceimage.jpg";
-var awardImage = document.createElement("IMG");
-awardImage.setAttribute('src', pathToImage);
-console.log(awardImage);
-
-document.getElementById('face').appendChild(awardImage);
-
-
 }
 
-
-
-
-
-
-}

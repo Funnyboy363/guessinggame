@@ -13,6 +13,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 body {
     font-size: 16px;
     width: 100%;
+    background-color: #c0c715;
 }
 
 
@@ -26,7 +27,8 @@ header {
 	max-width: 100%;
     background-color: $primaryColor;
     color: $fontColor;
-    background-image: url(../images/westby-house-front-view.jpg);
+    background-image: url(../images/froggy.jpg);
+    background-position: center;
     background-repeat: none;
     } 
     
@@ -34,16 +36,18 @@ header {
     
     
     h1 {
-        font-size: 2rem;
-        
-        color: black;
+        padding-top: 5rem;
+        font-size: 3rem;
+        text-align: center;
+        color: white;
     }
     
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin: .75rem 0 0 $gutter;
-        color: lighten($primaryColor, 10%);
+        color: white;
+        text-align: center;
     } // end h2
     
     h3 {
@@ -62,8 +66,34 @@ header {
 	color: brown;
 }
 
-    
+
+.form {
+    margin-left: 5.5rem;
+}
+
+#submitguess {
+    background-color: #fabb05;
+    padding: .5rem;
+    margin-left: .5rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+    #guessField {
+        background-color: #53ab04;
+        padding: .5rem;
+        width: 50px;
+        border: none;
+    }
    
+
+
+
+#type {
+    margin-left: 4.9rem;
+    margin-top: 1rem;
+}
+
 /*-----------------------------------------------footer-----------------------------------*/
 
 
